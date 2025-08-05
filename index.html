@@ -6,16 +6,44 @@
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
+  .footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 14px;
+    color: #333;
+  }
+  .fade {
+    opacity: 0;
+    animation: fade 4s infinite;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 </style>
 <head>
-    <title>Do Nothing</title>
+  <title>Do Nothing</title>
 </head>
 <body>
-    <h1>Welcome to Do Nothing!</h1>
-    <p>This is a place to relax and unwind, So please do nothing for a moment.</p>
+  <h1>Welcome to Do Nothing!</h1>
+  <p>This is a place to relax and unwind,<br>So please do nothing for a moment.</p>
+  <div class="footer">
+    <span class="fade" style="animation-delay: 0s">There is mute button for ___Coming soon...</span>
+  </div>
 </body>
 </html>
